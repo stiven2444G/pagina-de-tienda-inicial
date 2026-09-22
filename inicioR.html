@@ -1,0 +1,58 @@
+<html<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - MerCaSede</title>
+  <link rel="stylesheet" href="InicioR.css">
+</head>
+<body>
+
+  <form class="formulario">
+    <h2>Crea tu cuenta MerCaSede</h2>
+
+    <div class="row">
+      <div class="field">
+        <label for="nombre">Ingresar Nombre</label>
+        <input type="text" id="nombre" required>
+      </div>
+      <div class="field">
+        <label for="correo">Ingresar Correo</label>
+        <input type="email" id="correo" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="contrasena">Crear Contraseña</label>
+      <input type="password" id="contrasena" required>
+    </div>
+
+    <div class="field">
+      <label for="lugar">Lugar</label>
+      <select id="lugar">
+        <option value="manzana">Manzana</option>
+        <option value="torre">Torre</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="direccion">Ingresar Direccion</label>
+      <input type="text" id="direccion" required>
+    </div>
+
+    <div class="field checkbox">
+      <input type="checkbox" id="terminos" required>
+      <label for="terminos">Acepto los términos y condiciones</label>
+    </div>
+
+    <button type="submit" id="btnCrear">Crear cuenta</button>
+    <button type="reset">Limpiar</button>
+
+    <section>
+      <a href="inicioS.html" class="btn">Inicio</a>
+    </section>
+  </form>
+
+  <script src="registro.js"></script>
+</body>
+</html>

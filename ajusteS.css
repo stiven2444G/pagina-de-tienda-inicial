@@ -1,0 +1,125 @@
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+  body {
+    font-family: "Segoe UI", sans-serif;
+    color: #1f2333;
+    background: #fafafc;
+    line-height: 1.5;
+  }
+
+
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 48px;
+    background: #FFB64F;
+    background: linear-gradient(90deg, rgba(255, 182, 79, 1) 0%, rgba(204, 153, 35, 1) 48%, rgba(255, 182, 79, 1) 100%);
+  }
+
+  .nav a { margin-left: 24px; text-decoration: none; color: #1f2333; }
+  .logo { font-weight: 800; font-size: 1.3rem; }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 48px;
+  }
+  .hero h1 { font-size: 2.4rem; margin-bottom: 16px; }
+  .hero p { color: #5b6180; margin-bottom: 24px; }
+  .hero img { width: 100%; border-radius: 16px; }
+
+  .btn {
+    display: inline-block;
+    background: #FFB64F;
+    background: linear-gradient(90deg, rgba(255, 182, 79, 1) 0%, rgba(204, 153, 35, 1) 48%, rgba(255, 182, 79, 1) 100%);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .btn-claro{
+    display: inline-block;
+    background: #FFFF;
+    color:  #FFB64F;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .hero img {
+    width: 600px;  /* Cambia el ancho a 300 píxeles */
+    height: auto;  /* Mantiene la proporción original de la altura */
+  }
+
+
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 40px 48px;
+  }
+  .card {
+    background: white;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    transition: transform 0.2s ease;
+  }
+  .card:hover { transform: translateY(-4px); }
+
+  .cta {
+    background: #FFB64F;
+    background: linear-gradient(90deg, rgba(255, 182, 79, 1) 0%, rgba(204, 153, 35, 1) 48%, rgba(255, 182, 79, 1) 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 24px;
+  }
+  .cta h2 { margin-bottom: 20px; }
+
+  footer {
+    text-align: center;
+    padding: 24px;
+    color: #8a90ad;
+    font-size: .9rem;
+  }
+
+  /* pantallas angostas: apilar en una columna */
+  @media (max-width: 700px) {
+    .hero { grid-template-columns: 1fr; }
+    .features { grid-template-columns: 1fr; }
+    .nav { flex-direction: column; gap: 12px; }
+  }
+
+  .resaltado {
+    font-size: 3rem;
+    background: linear-gradient(to top, rgba(255, 251, 3, 1) 0%, rgba(255, 150, 51, 1) 87%);
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+  }
+
+
+  .logo {
+    font-size: 3rem;
+    background: linear-gradient(to top, rgb(255, 15, 15) 0%, rgb(190, 32, 32) 87%);
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+  }
