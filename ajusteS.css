@@ -97,6 +97,135 @@
     font-size: .9rem;
   }
 
+
+.productos {
+    max-width: 1050px;
+    margin: 30px auto;
+    padding: 15px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #666;
+    margin: 8px 0 20px;
+}
+
+.carrusel {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-productos {
+    display: flex;
+    gap: 14px;
+    overflow: hidden;
+    scroll-behavior: auto;
+    width: 100%;
+}
+
+.producto {
+    min-width: 220px;
+    background: #ede4e4;
+    background: radial-gradient(
+        circle,
+        rgba(237, 228, 228, 0.93) 0%,
+        rgba(204, 200, 200, 0.88) 100%
+    );
+    border: 2px solid #a5a9aac5;
+    border-radius: 15px;
+    padding: 14px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: transform 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.imagen {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    font-size: 19px;
+    margin-bottom: 6px;
+    color: #222;
+}
+
+.producto p {
+    color: #666;
+    min-height: 35px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.producto button {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 182, 79, 1) 0%,
+        rgba(204, 153, 35, 1) 48%,
+        rgba(255, 182, 79, 1) 100%
+    );
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.producto button:hover {
+    background-color: #146c43;
+}
+
+.btn2 {
+    position: absolute;
+    z-index: 2;
+    border: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.izquierda {
+    left: -15px;
+}
+
+.derecha {
+    right: -15px;
+}
+
+.btn2:hover {
+    background-color: #198754;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .producto {
+        min-width: 200px;
+    }
+
+    .izquierda {
+        left: -8px;
+    }
+
+    .derecha {
+        right: -8px;
+    }
+}
   /* pantallas angostas: apilar en una columna */
   @media (max-width: 700px) {
     .hero { grid-template-columns: 1fr; }

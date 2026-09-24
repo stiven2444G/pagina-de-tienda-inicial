@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panelio - Productos</title>
+  <link rel="stylesheet" href="productoDec.css">
+</head>
+<body>
+  <div class="layout">
+    <!-- BARRA SUPERIOR -->
+    <header class="topbar">
+      <div class="logo"><span class="resaltado">M</span>er<span class="resaltado">C</span>a<span class="resaltado">S</span>ede</div>
+      <div class="logo"><span class="resaltado">M</span>er<span class="resaltado">C</span>a<span class="resaltado">S</span>ede</div>
+      <nav class="top-links">
+        <a href="carrito.html">Carrito de Compra</a>
+        <a href="#">Reportes</a>
+      </nav>
+    </header>
+
+    <!-- MENÚ LATERAL -->
+    <aside class="sidebar">
+      <nav class="side-links">
+        <a href="#" class="active" data-categoria="todos">Todo</a>
+        <a href="#" data-categoria="granos">Granos</a>
+        <a href="#" data-categoria="carnes">Carnes</a>
+        <a href="#" data-categoria="liquidos">Líquidos</a>
+        <a href="#" data-categoria="aseo">Aseo</a>
+        <a href="#" data-categoria="frutas">Frutas y verduras</a>
+        <a href="#" data-categoria="lacteos">Lácteos</a>
+        <a href="#" data-categoria="snacks">Snacks</a>
+      </nav>
+    </aside>
+
+    <!-- CONTENIDO -->
+    <main class="content">
+      <div class="content-header">
+        <div>
+          <h1>Productos</h1>
+          <p>Encuentra todo lo que necesitas</p>
+        </div>
+
+        <!-- BUSCADOR -->
+        <div class="busca3">
+          <input type="text" id="buscador" class="buscador" placeholder="Buscar producto...">
+        </div>
+
+        <!-- PRODUCTOS -->
+        <div class="cards" id="productos">
+          <div class="card" data-categoria="granos">
+            <div class="producto-img"></div>
+            <h3>Arroz</h3>
+            <p>Arroz blanco 1 kg</p>
+            <strong>$4.500</strong>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="card" data-categoria="granos">
+            <div class="producto-img"></div>
+            <h3>Lentejas</h3>
+            <p>Lentejas 500 g</p>
+            <strong>$3.800</strong>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="card" data-categoria="granos">
+            <div class="producto-img"></div>
+            <h3>Fríjol</h3>
+            <p>Fríjol rojo 500 g</p>
+            <strong>$5.200</strong>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="card" data-categoria="granos">
+            <div class="producto-img"></div>
+            <h3>Pasta</h3>
+            <p>Pasta 500 g</p>
+            <strong>$3.500</strong>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="card" data-categoria="carnes">
+            <div class="producto-img"></div>
+            <h3>Carne de res</h3>
+            <p>Carne de res 500 g</p>
+            <strong>$12.000</strong>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="card" data-categoria="carnes">
+            <div class="producto-img"></div>
+            <h3>Pollo</h3>
+            <p>Pechuga de pollo</p>
+            <strong>$10.500</strong>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="card" data-categoria="carnes">
+            <div class="producto-img"></div>
+            <h3>Pescado</h3>
+            <p>Pescado fresco</p>
+            <strong>$11.000</strong>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="card" data-categoria="liquidos">
+            <div class="producto-img"></div>
+            <h3>Gaseosa</h3>
+            <p>Gaseosa 1.5 L</p>
+            <strong>$4.000</strong>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="card" data-categoria="liquidos">
+            <div class="producto-img"></div>
+            <h3>Agua</h3>
+            <p>Agua 1.5 L</p>
+            <strong>$2.500</strong>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="card" data-categoria="liquidos">
+            <div class="producto-img"></div>
+            <h3>Leche</h3>
+            <p>Leche 1 litro</p>
+            <strong>$4.200</strong>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="card" data-categoria="aseo">
+            <div class="producto-img"></div>
+            <h3>Jabón</h3>
+            <p>Jabón de baño</p>
+            <strong>$3.000</strong>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="card" data-categoria="aseo">
+            <div class="producto-img"></div>
+            <h3>Detergente</h3>
+            <p>Detergente 1 kg</p>
+            <strong>$6.500</strong>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="card" data-categoria="aseo">
+            <div class="producto-img"></div>
+            <h3>Papel higiénico</h3>
+            <p>Paquete x4</p>
+            <strong>$7.000</strong>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="card" data-categoria="frutas">
+            <div class="producto-img"></div>
+            <h3>Manzana</h3>
+            <p>Manzana roja</p>
+            <strong>$4.500</strong>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="card" data-categoria="frutas">
+            <div class="producto-img"></div>
+            <h3>Banano</h3>
+            <p>Banano por kilo</p>
+            <strong>$3.500</strong>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="card" data-categoria="frutas">
+            <div class="producto-img"></div>
+            <h3>Zanahoria</h3>
+            <p>Zanahoria por kilo</p>
+            <strong>$3.000</strong>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="card" data-categoria="lacteos">
+            <div class="producto-img"></div>
+            <h3>Queso</h3>
+            <p>Queso 500 g</p>
+            <strong>$8.000</strong>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="card" data-categoria="lacteos">
+            <div class="producto-img"></div>
+            <h3>Yogur</h3>
+            <p>Yogur 1 litro</p>
+            <strong>$5.500</strong>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="card" data-categoria="snacks">
+            <div class="producto-img"></div>
+            <h3>Galletas</h3>
+            <p>Galletas paquete</p>
+            <strong>$2.500</strong>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="card" data-categoria="snacks">
+            <div class="producto-img"></div>
+            <h3>Palomitas</h3>
+            <p>Palomitas de maíz</p>
+            <strong>$3.000</strong>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="ptroducto.js"></script>
+</body>
+</html>
